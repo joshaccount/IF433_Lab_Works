@@ -1,9 +1,10 @@
 package oop_105516_JoshReaganWiselim.week01
 
 fun main() {
-    var name: String = "Josh Reagan Wiselim"
-    var score: Int = 100
+    // REFACTOR: Gunakan val dan hapus tipe data eksplisit
+    val name = "Josh Reagan Wiselim"
+    val score = 100
 
-    // Concatenation gaya lama
-    println("Nama: " + name + ", Nilai: " + score)
+    // REFACTOR: String Template ($name)
+    println("Nama: $name, Nilai: $score")
 }
