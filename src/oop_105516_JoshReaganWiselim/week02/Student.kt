@@ -1,6 +1,11 @@
 package oop_105516_JoshReaganWiselim.week02
 
-class Student (val name: String, val nim: String, val major: String){
+class Student (
+    val name: String,
+    val nim: String,
+    var major: String,
+    var gpa: Double = 0.0 // <-- Default Argument
+){
     init {
         // Validasi Sederhana : Cek panjang NIM
         if (nim.length != 5) {
