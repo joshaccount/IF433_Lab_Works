@@ -1,7 +1,7 @@
 package oop_105516_JoshReaganWiselim.week04
 
 // Gunakan keyword 'open' agar class bisa diwariskan
-class Vehicle (val brand: String){
+open class Vehicle (val brand: String){
     var speed: Int = 0
 
     // Method juga bersifat final secara default. Gunakan 'open' agar bisa di-override.
