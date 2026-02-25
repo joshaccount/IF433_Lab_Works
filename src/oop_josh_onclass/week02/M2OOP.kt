@@ -1,4 +1,4 @@
-package oop_josh_week02
+package oop_josh_onclass.week02
 
 class Jagoan {
     var nama:String = "Paddington"
