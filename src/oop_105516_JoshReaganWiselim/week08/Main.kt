@@ -20,7 +20,7 @@ fun main() {
     println(receipt)
 
     println("\n=== TEST SAFE CASTING ===")
-    val mixedData: List<Any> = listof(
+    val mixedData: List<Any> = listOf(
         "Smartphone",
         1500000,
         UserProfile("Andi", null),
@@ -36,4 +36,9 @@ fun main() {
             println("Ditemukan teks: ${it.uppercase()}")
         }
     }
+
+    val someObject: Any = 100 // Tipe aslinya Integer
+    // Coba cast ke String. Jika gagal (null), ganti dengan "Unknown String"
+    val safeString = someObject as? String ?: "Unknown String"
+    println("Hasil cast + fallback: $safeString")
 }
