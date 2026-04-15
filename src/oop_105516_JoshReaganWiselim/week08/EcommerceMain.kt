@@ -26,3 +26,15 @@ fun main() {
         }
     }
 }
+
+// Hasil
+/*
+[OK] Electronic: Laptop, Warranty: 24 bulan
+Payment Success: TRX-E01-SUCCESS
+[OK] Clothing: T-Shirt, Size: XL
+Payment Success: TRX-C01-SUCCESS
+[OK] Electronic: Mouse, Warranty: 12 bulan
+Payment Success: TRX-E02-SUCCESS
+[ERROR] Data korup: API Invalid: Missing ID
+[SKIP] Tipe produk tidak dikenal, data di-skip.
+ */
