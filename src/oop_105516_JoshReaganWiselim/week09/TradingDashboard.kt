@@ -35,4 +35,12 @@ fun main() {
     println("\nTOP PERFORMERS (Winning Trades)")
     println("-".repeat(40))
     topPerformersString.forEach { println(it) }
+
+    println("\nWORST PERFORMERS (Losing Trades)")
+    println("-".repeat(40))
+    worstPerformersString.forEach { println(it) }
+
+    println("\nUNIQUE TRADING PAIRS")
+    println("-".repeat(40))
+    println(uniquePairs)
 }
