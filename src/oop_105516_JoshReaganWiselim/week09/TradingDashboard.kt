@@ -44,3 +44,25 @@ fun main() {
     println("-".repeat(40))
     println(uniquePairs)
 }
+
+/* Hasilnya, untuk checkpoint 20
+========================================
+=== CRYPTO TRADING DASHBOARD ===
+========================================
+
+TOP PERFORMERS (Winning Trades)
+----------------------------------------
+WIN [SOLUSDT - LONG]: +32.0% ROE (Lev: 25x)
+WIN [BTCUSDT - LONG]: +15.5% ROE (Lev: 20x)
+WIN [ETHUSDT - LONG]: +8.4% ROE (Lev: 10x)
+
+WORST PERFORMERS (Losing Trades)
+----------------------------------------
+LOSS [BTCUSDT - SHORT]: +-12.8% ROE (Lev: 15x)
+LOSS [ETHUSDT - SHORT]: +-5.2% ROE (Lev: 10x)
+LOSS [BNBUSDT - SHORT]: +-3.1% ROE (Lev: 5x)
+
+UNIQUE TRADING PAIRS
+----------------------------------------
+[BTCUSDT, ETHUSDT, SOLUSDT, BNBUSDT]
+*/
