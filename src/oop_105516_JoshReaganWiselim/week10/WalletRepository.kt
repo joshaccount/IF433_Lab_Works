@@ -10,4 +10,9 @@ class WalletRepository<T : Any> {
     fun getAll(): List<T> {
         return items
     }
+
+    // Filter/search berdasarkan kondisi lambda
+    fun search(predicate: (T) -> Boolean): List<T> {
+        return items.filter { predicate(it) }
+    }
 }
