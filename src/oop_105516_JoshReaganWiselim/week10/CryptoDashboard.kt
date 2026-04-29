@@ -38,3 +38,25 @@ fun main() {
         println("  ${tx.id}: ${tx.amount}")
     }
 }
+
+/* Hasil
+=== CRYPTO DASHBOARD ===
+Status: 200 OK
+Daftar Koin:
+  Koin : BTC | Balance: 0.5
+  Koin : ETH | Balance: 2.3
+  Koin : USDT | Balance: 1500.0
+
+Daftar Transaksi:
+  ID: TION001 | Amount: 0.1
+  ID: TION002 | Amount: 500.0
+  ID: TION003 | Amount: -200.0
+
+Koin dengan balance > 1.0:
+  ETH: 2.3
+  USDT: 1500.0
+
+Transaksi dengan amount positif:
+  TION001: 0.1
+  TION002: 500.0
+ */
