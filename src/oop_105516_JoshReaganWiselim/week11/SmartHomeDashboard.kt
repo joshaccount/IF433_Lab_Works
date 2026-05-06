@@ -32,4 +32,11 @@ fun main(){
         SmartDevice("Picolo's Auto Feeder", "Pet Care", true, 10)
     )
     println("(LOG) Alat pakan peliharaan ditambahkan: Picolo's Auto Feeder")
+
+    println("\n[SEARCH] Mencari perangkat kategori 'Camera'...")
+    val searchResult = homeDevices.find { it.category == "Camera" }
+    searchResult?.let {
+        println("Perangkat ditemukan:")
+        println(it.diagnose())
+    }
 }
