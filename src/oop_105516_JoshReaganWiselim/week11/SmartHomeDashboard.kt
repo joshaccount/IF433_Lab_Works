@@ -39,4 +39,9 @@ fun main(){
         println("Perangkat ditemukan:")
         println(it.diagnose())
     }
+
+    println("\n[SUMMARY] Ringkasan Dashboard Smart Home:")
+    with(homeDevices) {
+        println("Total perangkat terdaftar: ${this.size} perangkat")
+    }
 }
