@@ -45,6 +45,14 @@ fun main(){
         println("Total perangkat terdaftar: ${this.size} perangkat")
     }
 
-    val totalPower = homeDevices.run { this.sumBy { it.powerLoad } }
+    val totalPower = homeDevices.run { sumOf { it.powerLoad } }
     println("Total beban daya: $totalPower Watt")
+
+    println("\n[DIAGNOSTIK LENGKAP] Status semua perangkat:")
+    println("----------------------------------------")
+    homeDevices.forEach { device ->
+        println(device.diagnose())
+    }
+    println("----------------------------------------")
+    println("\nSmart Home Configuration Pipeline selesai!")
 }
