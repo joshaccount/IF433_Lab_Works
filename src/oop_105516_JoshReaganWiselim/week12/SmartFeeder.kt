@@ -61,3 +61,16 @@ fun main() {
         println("(Opsional: Berikan chicken jerky secara manual)")
     }
 }
+
+/* Hasil
+=== JADWAL MAKAN PAGI ===
+Stok saat ini: 50 gr | Porsi diminta: 80 gr
+ERROR STOK: Kibble tidak cukup! Diminta 80 gr, sisa 50 gr
+Harap isi ulang wadah kibble segera!
+Siklus pengecekan dispenser pagi selesai.
+
+=== JADWAL MAKAN SORE ===
+Stok saat ini: 1000 gr | Porsi diminta: 30 gr
+Kibble berhasil dikeluarkan!
+Makan sore sukses! Sisa stok kibble: 970 gr
+*/
