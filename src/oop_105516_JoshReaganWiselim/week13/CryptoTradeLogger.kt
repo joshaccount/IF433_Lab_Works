@@ -62,4 +62,8 @@ fun main() {
 
     val loadedData = loadTrades(path = filePath)
     val totalPnl = loadedData.map { it.pnl }.sum()
+
+    println("\n=== LOADED TRADE RECORDS ===")
+    loadedData.forEach { println(it) }
+    println("\n==== TOTAL PnL BERSIH: $totalPnl ====")
 }
