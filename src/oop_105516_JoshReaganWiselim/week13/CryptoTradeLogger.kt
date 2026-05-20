@@ -59,4 +59,7 @@ fun main() {
 
     File(filePath).appendText("CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n")
     println("Malformed line berhasil di-inject ke $filePath")
+
+    val loadedData = loadTrades(path = filePath)
+    val totalPnl = loadedData.map { it.pnl }.sum()
 }
