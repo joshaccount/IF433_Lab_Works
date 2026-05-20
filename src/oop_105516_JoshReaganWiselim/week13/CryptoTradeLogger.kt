@@ -56,4 +56,7 @@ fun main() {
     val filePath = "crypto_trades.csv"
     saveTrades(trades, path = filePath)
     println("Trade records berhasil disimpan ke $filePath")
+
+    File(filePath).appendText("CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n")
+    println("Malformed line berhasil di-inject ke $filePath")
 }
